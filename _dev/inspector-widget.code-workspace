@@ -15,8 +15,8 @@
     "editor.renderControlCharacters": true,
     "editor.tabCompletion": "on",
     "workbench.colorCustomizations": {
-      "titleBar.activeBackground": "#542B7F",
-      "titleBar.inactiveBackground": "#3C1F5B",
+      "titleBar.activeBackground": "#644100",
+      "titleBar.inactiveBackground": "#3d2800",
       "titleBar.activeForeground": "#e7e7e7",
       "titleBar.inactiveForeground": "#e7e7e799"
     },

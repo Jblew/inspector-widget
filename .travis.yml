@@ -1,0 +1,13 @@
+dist: xenial
+language: node_js
+
+before_install:
+  - npm i -g npm
+  - npm i -g firebase firebase-tools
+
+install:
+  - npm --prefix="functions" install
+  - npm --prefix="public/inspector-widget-vue" install
+
+script:
+  - firebase deploy

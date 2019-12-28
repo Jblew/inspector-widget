@@ -14,7 +14,7 @@
         "predeploy": [
             "npm --prefix \"public/roles\" run build",
             "npm --prefix \"public/inspector-widget-vue\" run build",
-            "mv public/roles/dist public/inspector-widget-vue/roles"
+            "mv public/roles/dist public/inspector-widget-vue/dist/roles"
         ],
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },

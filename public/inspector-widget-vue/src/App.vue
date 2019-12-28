@@ -15,7 +15,7 @@ import { AuthView } from 'firestore-roles-vue-auth/src';
 import { RolesAuthModule } from 'firestore-roles-vuex-module';
 import Vue from 'vue';
 
-import NotificationsSnackbar from './components/NotificationsSnackbar.vue';
+import NotificationsSnackbar from '@/components/misc/NotificationsSnackbar.vue';
 
 export default Vue.extend({
   computed: {
@@ -30,5 +30,4 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

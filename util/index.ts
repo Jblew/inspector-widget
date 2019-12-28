@@ -1,1 +1,1 @@
-export * from "./strEnum";
+export * from './strEnum';

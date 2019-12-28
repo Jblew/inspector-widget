@@ -8,6 +8,7 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'warning' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warning' : 'off',
         'import/prefer-default-export': 'off',
+        'no-param-reassign': 'off',
     },
     parserOptions: {
         parser: '@typescript-eslint/parser',

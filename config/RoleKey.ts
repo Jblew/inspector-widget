@@ -1,3 +1,3 @@
-import { strEnum } from "../util";
+import { strEnum } from '../util';
 
-export const RoleKey = strEnum(["admin", "viewer"]);
+export const RoleKey = strEnum(['admin', 'viewer']);

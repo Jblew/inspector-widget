@@ -10,4 +10,4 @@ install:
   - npm --prefix="public/inspector-widget-vue" install
 
 script:
-  - firebase deploy
+  - firebase deploy --token "$FIREBASE_TOKEN"

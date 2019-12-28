@@ -8,6 +8,13 @@ before_install:
 install:
   - npm --prefix="functions" install
   - npm --prefix="public/inspector-widget-vue" install
+  - npm --prefix="public/roles" install
 
-script:
-  - firebase deploy --token "$FIREBASE_TOKEN"
+deploy:
+  - provider: script
+    script: bash -c "npx firebase deploy --token \"$FIREBASE_TOKEN\""
+    skip_cleanup: true
+    on:
+      tags: false
+      all_branches: true
+      condition: $TRAVIS_BRANCH =~ ^(production)$

@@ -15,12 +15,6 @@ install:
 script:
     - npm --prefix="config" run build
     - echo "Building inside deployment scripts"
-
-deploy:
-    - provider: script
-      script: bash -c "npx firebase deploy --token \"$FIREBASE_TOKEN\""
-      skip_cleanup: true
-      on:
-          tags: false
-          all_branches: true
-          condition: $TRAVIS_BRANCH =~ ^(master)$
+    - if [[ $TRAVIS_BRANCH =~ ^(master)$ ]]; then
+      firebase deploy --token \"$FIREBASE_TOKEN\"
+      fi

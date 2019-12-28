@@ -9,6 +9,7 @@ install:
     - npm --prefix="functions" install
     - npm --prefix="public/inspector-widget-vue" install
     - npm --prefix="public/roles" install
+    - npm --prefix="firestore" install
     - npm --prefix="config" install
 
 script:

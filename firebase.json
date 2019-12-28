@@ -6,18 +6,17 @@
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
-    ]
+    ],
+    "source": "functions"
   },
   "hosting": {
     "public": "public/inspector-widget-vue/dist",
-    "predeploy": ["npm --prefix \"$RESOURCE_DIR/..\" run build"],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "predeploy": [
+      "npm --prefix \"public/roles\" run build",
+      "npm --prefix \"public/inspector-widget-vue\" run build",
+      "mv public/roles/dist public/inspector-widget-vue/roles"
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "emulators": {
     "functions": {

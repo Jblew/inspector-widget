@@ -2,22 +2,24 @@ dist: xenial
 language: node_js
 
 before_install:
-  - npm i -g npm
-  - npm i -g firebase firebase-tools
+    - npm i -g npm
+    - npm i -g firebase firebase-tools
 
 install:
-  - npm --prefix="functions" install
-  - npm --prefix="public/inspector-widget-vue" install
-  - npm --prefix="public/roles" install
+    - npm --prefix="functions" install
+    - npm --prefix="public/inspector-widget-vue" install
+    - npm --prefix="public/roles" install
+    - npm --prefix="config" install
 
 script:
-  - echo "Building inside deployment scripts"
+    - npm --prefix="config" run build
+    - echo "Building inside deployment scripts"
 
 deploy:
-  - provider: script
-    script: bash -c "npx firebase deploy --token \"$FIREBASE_TOKEN\""
-    skip_cleanup: true
-    on:
-      tags: false
-      all_branches: true
-      condition: $TRAVIS_BRANCH =~ ^(master)$
+    - provider: script
+      script: bash -c "npx firebase deploy --token \"$FIREBASE_TOKEN\""
+      skip_cleanup: true
+      on:
+          tags: false
+          all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^(master)$

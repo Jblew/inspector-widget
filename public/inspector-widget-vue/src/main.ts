@@ -1,9 +1,12 @@
+/* eslint-disable global-require */
 import Vue from 'vue';
 import Vuex from 'vuex';
 import App from './App.vue';
 import router from './router';
 import { constructFirebaseApp, constructStore } from './config';
 import { constructRolesAdapter } from './config/constructRolesAdapter';
+import vuetify from './config/vuetify';
+import 'firebaseui/dist/firebaseui.css';
 
 Vue.config.productionTip = false;
 

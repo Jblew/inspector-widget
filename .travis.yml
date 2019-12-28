@@ -10,6 +10,9 @@ install:
   - npm --prefix="public/inspector-widget-vue" install
   - npm --prefix="public/roles" install
 
+script:
+  - echo "Building inside deployment scripts"
+
 deploy:
   - provider: script
     script: bash -c "npx firebase deploy --token \"$FIREBASE_TOKEN\""

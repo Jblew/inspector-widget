@@ -1,3 +1,3 @@
-export * from "./constructFirebaseApp";
-export * from "./auth.config";
-export * from "./constructStore";
+export * from './constructFirebaseApp';
+export * from './auth.config';
+export * from './constructStore';

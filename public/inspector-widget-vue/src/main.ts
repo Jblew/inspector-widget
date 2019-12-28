@@ -1,9 +1,9 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import { constructFirebaseApp, constructStore } from "./config";
-import { constructRolesAdapter } from "./config/constructRolesAdapter";
-import Vuex from "vuex";
+import Vue from 'vue';
+import Vuex from 'vuex';
+import App from './App.vue';
+import router from './router';
+import { constructFirebaseApp, constructStore } from './config';
+import { constructRolesAdapter } from './config/constructRolesAdapter';
 
 Vue.config.productionTip = false;
 
@@ -17,9 +17,9 @@ new Vue({
   provide() {
     return {
       firebase,
-      ...firestoreRolesAdapter.spreadToProvide()
+      ...firestoreRolesAdapter.spreadToProvide(),
     };
   },
   created() {},
-  render: h => h(App)
-}).$mount("#app");
+  render: h => h(App),
+}).$mount('#app');

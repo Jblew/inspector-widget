@@ -4,7 +4,9 @@
   </div>
 </template>
 
-<script>
+<script lang="td">
+import Vue from 'vue';
+
 export default Vue.extend({
   components: {},
 });

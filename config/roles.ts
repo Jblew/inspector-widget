@@ -1,8 +1,8 @@
 import { RoleKey } from "./RoleKey";
-import { FIRESTORE_KEYS } from "./firestore-keys";
+import { FIRESTORE_COLLECTIONS } from "./firestore-collections";
 
 export const RolesConfig = Object.freeze({
-  accountsCollection: FIRESTORE_KEYS.accounts,
+  accountsCollection: FIRESTORE_COLLECTIONS.accounts,
   roleCollectionPrefix: "role_",
   roleRequestsCollectionPrefix: "rolereq_",
   roles: {

@@ -28,7 +28,7 @@
   },
   "firestore": {
     "predeploy": ["npm --prefix \"$RESOURCE_DIR/..\" run build"],
-    "rules": "firestore/firestore.rules",
+    "rules": "firestore/deploy.firestore.rules",
     "indexes": "firestore/firestore.indexes.json"
   }
 }

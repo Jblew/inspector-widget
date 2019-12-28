@@ -17,5 +17,5 @@ script:
     - echo "Building inside deployment scripts"
     - |
         if [[ $TRAVIS_BRANCH =~ ^(master)$ ]]; then
-          firebase deploy --token \"$FIREBASE_TOKEN\"
+          firebase deploy --token "$FIREBASE_TOKEN"
         fi

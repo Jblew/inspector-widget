@@ -4,17 +4,17 @@
     },
     "functions": {
         "predeploy": [
-            "npm --prefix \"$RESOURCE_DIR/functions\" run lint",
-            "npm --prefix \"$RESOURCE_DIR/functions\" run build"
+            "npm --prefix \"functions\" run lint",
+            "npm --prefix \"functions\" run build"
         ],
         "source": "functions"
     },
     "hosting": {
         "public": "public/inspector-widget-vue/dist",
         "predeploy": [
-            "npm --prefix \"$RESOURCE_DIR/public/roles\" run build",
-            "npm --prefix \"$RESOURCE_DIR/public/inspector-widget-vue\" run build",
-            "mv $RESOURCE_DIR/public/roles/dist $RESOURCE_DIR/public/inspector-widget-vue/roles"
+            "npm --prefix \"public/roles\" run build",
+            "npm --prefix \"public/inspector-widget-vue\" run build",
+            "mv public/roles/dist public/inspector-widget-vue/roles"
         ],
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     },
@@ -27,7 +27,7 @@
         }
     },
     "firestore": {
-        "predeploy": ["npm --prefix \"$RESOURCE_DIR/firestore\" run gen-rules"],
+        "predeploy": ["npm --prefix \"firestore\" run gen-rules"],
         "rules": "firestore/deploy.firestore.rules",
         "indexes": "firestore/firestore.indexes.json"
     }

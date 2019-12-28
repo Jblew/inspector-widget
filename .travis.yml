@@ -6,11 +6,11 @@ before_install:
     - npm i -g firebase firebase-tools
 
 install:
-    - npm --prefix="functions" install
-    - npm --prefix="public/inspector-widget-vue" install
-    - npm --prefix="public/roles" install
-    - npm --prefix="firestore" install
-    - npm --prefix="config" install
+    - npm --prefix="functions" ci
+    - npm --prefix="public/inspector-widget-vue" ci
+    - npm --prefix="public/roles" ci
+    - npm --prefix="firestore" ci
+    - npm --prefix="config" ci
 
 script:
     - npm --prefix="config" run build

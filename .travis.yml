@@ -2,20 +2,19 @@ dist: xenial
 language: node_js
 
 before_install:
-    - npm i -g npm
-    - npm i -g firebase firebase-tools
+  - npm i -g npm
+  - npm i -g firebase firebase-tools
 
 install:
-    - npm --prefix="functions" ci
-    - npm --prefix="public/inspector-widget-vue" ci
-    - npm --prefix="public/roles" ci
-    - npm --prefix="firestore" ci
-    - npm --prefix="config" ci
+  - npm --prefix="public/inspector-widget-vue" ci
+  - npm --prefix="public/roles" ci
+  - npm --prefix="firestore" ci
+  - npm --prefix="config" ci
 
 script:
-    - npm --prefix="config" run build
-    - echo "Building inside deployment scripts"
-    - |
-        if [[ $TRAVIS_BRANCH =~ ^(master)$ ]]; then
-          firebase deploy --token "$FIREBASE_TOKEN"
-        fi
+  - npm --prefix="config" run build
+  - echo "Building inside deployment scripts"
+  - |
+    if [[ $TRAVIS_BRANCH =~ ^(master)$ ]]; then
+      firebase deploy --token "$FIREBASE_TOKEN"
+    fi

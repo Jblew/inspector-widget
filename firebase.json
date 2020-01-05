@@ -1,34 +1,27 @@
 {
-    "database": {
-        "rules": "database-rules.json"
-    },
+  "database": {
+    "rules": "database-rules.json"
+  },
+  "hosting": {
+    "public": "public/inspector-widget-vue/dist",
+    "predeploy": [
+      "npm --prefix \"public/roles\" run build",
+      "npm --prefix \"public/inspector-widget-vue\" run build",
+      "mv public/roles/dist public/inspector-widget-vue/dist/roles"
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  },
+  "emulators": {
     "functions": {
-        "predeploy": [
-            "npm --prefix \"functions\" run lint",
-            "npm --prefix \"functions\" run build"
-        ],
-        "source": "functions"
+      "port": 5001
     },
-    "hosting": {
-        "public": "public/inspector-widget-vue/dist",
-        "predeploy": [
-            "npm --prefix \"public/roles\" run build",
-            "npm --prefix \"public/inspector-widget-vue\" run build",
-            "mv public/roles/dist public/inspector-widget-vue/dist/roles"
-        ],
-        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    },
-    "emulators": {
-        "functions": {
-            "port": 5001
-        },
-        "database": {
-            "port": 9000
-        }
-    },
-    "firestore": {
-        "predeploy": ["npm --prefix \"firestore\" run gen-rules"],
-        "rules": "firestore/deploy.firestore.rules",
-        "indexes": "firestore/firestore.indexes.json"
+    "database": {
+      "port": 9000
     }
+  },
+  "firestore": {
+    "predeploy": ["npm --prefix \"firestore\" run gen-rules"],
+    "rules": "firestore/deploy.firestore.rules",
+    "indexes": "firestore/firestore.indexes.json"
+  }
 }

@@ -1,0 +1,3 @@
+[submodule "public/inspector-widget-vue/src/modules/inspector-widget-aws-cost"]
+	path = public/inspector-widget-vue/src/modules/inspector-widget-aws-cost
+	url = git@github.com:Jblew/inspector-widget-aws-cost.git

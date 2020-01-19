@@ -2,7 +2,7 @@ function userIsViewer() {
   return isAuthenticated() && callerHasRole("§role_viewer§");
 }
 
-match /§collection_collected_data§/{mpId} {
+match /§collection_collected_data§/{document=**} {
   allow read: if userIsViewer();
   allow write: if false;
 }

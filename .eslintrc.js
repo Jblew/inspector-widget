@@ -14,6 +14,8 @@ module.exports = {
     'implicit-arrow-linebreak': 'off',
     'arrow-parens': 'off',
     'no-use-before-define': 'off',
+    'class-methods-use-this': 'off',
+    'object-curly-newline': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

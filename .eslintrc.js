@@ -12,6 +12,8 @@ module.exports = {
     'import/extensions': 'off',
     'no-param-reassign': 'off',
     'implicit-arrow-linebreak': 'off',
+    'arrow-parens': 'off',
+    'no-use-before-define': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

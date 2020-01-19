@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { AWSCostMonthToDate } from '../../../../../modules/aws-cost/aws-cost-ui/src';
+import { AWSCostMonthToDate } from '@/modules/inspector-widget-aws-cost/ui';
 
 export default Vue.extend({
   components: {

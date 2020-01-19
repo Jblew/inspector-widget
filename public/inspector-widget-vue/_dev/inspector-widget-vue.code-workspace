@@ -4,8 +4,8 @@
       "path": ".."
     },
     {
-      "name": "aws-cost-ui",
-      "path": "../src/modules/inspector-widget-aws-cost/ui"
+      "name": "aws-cost",
+      "path": "../src/modules/inspector-widget-aws-cost"
     }
   ],
   "settings": {

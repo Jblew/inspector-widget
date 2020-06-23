@@ -6,3 +6,8 @@ match /§collection_collected_data§/{document=**} {
   allow read: if userIsViewer();
   allow write: if false;
 }
+
+match /osowieclog {
+  allow read: if userIsViewer();
+  allow write: if false;
+}

@@ -7,21 +7,23 @@
 
       <v-content>
         <v-container fluid>
-          <main-page />
+          <a-w-s-cost-row />
+          <osowiec-row />
         </v-container>
       </v-content>
     </v-app>
   </div>
-  <!--<div><a-w-s-cost-month-to-date /> <a-w-s-cost-daily /></div>-->
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import MainPage from './MainPage.vue';
+import AWSCostRow from './AWSCostRow.vue';
+import OsowiecRow from './OsowiecRow.vue';
 
 export default Vue.extend({
   components: {
-    MainPage,
+    AWSCostRow,
+    OsowiecRow,
   },
 });
 </script>

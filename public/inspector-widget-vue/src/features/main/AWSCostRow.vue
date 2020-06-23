@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { AWSCostMonthToDate, AWSCostDaily } from '@/modules/inspector-widget-aws-cost/ui';
+import { AWSCostMonthToDate, AWSCostDaily } from '../../modules/inspector-widget-aws-cost/aws-cost-ui/src';
 
 export default Vue.extend({
   components: {

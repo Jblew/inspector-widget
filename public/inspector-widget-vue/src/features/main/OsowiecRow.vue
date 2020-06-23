@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { OsowiecLog } from '@/modules/inspector-widget-osowiec/ui';
+import { OsowiecLog } from '../../modules/inspector-widget-osowiec/ui/src';
 
 export default Vue.extend({
   components: {

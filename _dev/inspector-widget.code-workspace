@@ -2,10 +2,25 @@
   "folders": [
     {
       "path": ".."
+    },
+    {
+      "path": "../public/inspector-widget-vue/"
+    },
+    {
+      "path": "../public/inspector-widget-vue/src/modules"
+    },
+    {
+      "path": "../public/inspector-widget-vue/src/modules/inspector-widget-aws-cost"
+    },
+    {
+      "path": "../public/inspector-widget-vue/src/modules/inspector-widget-osowiec"
     }
   ],
   "settings": {
-    "editor.rulers": [96, 100],
+    "editor.rulers": [
+      96,
+      100
+    ],
     "editor.minimap.maxColumn": 90,
     "editor.formatOnPaste": false,
     "editor.formatOnType": false,
@@ -51,7 +66,9 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "prettier.disableLanguages": [],
     "liveshare.featureSet": "insiders",
-    "todo-tree.general.tags": ["TASKTODO"],
+    "todo-tree.general.tags": [
+      "TASKTODO"
+    ],
     "todo-tree.highlights.customHighlight": {
       "TASKTODO": {
         "icon": "alert",

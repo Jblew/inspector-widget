@@ -16,6 +16,12 @@ module.exports = {
     'no-use-before-define': 'off',
     'class-methods-use-this': 'off',
     'object-curly-newline': 'off',
+    'func-names': 'off',
+    'prefer-template': 'off',
+    'eqeqeq': 'off',
+    'import/order': 'off',
+    'prefer-arrow-callback': 'off',
+    'prefer-const': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

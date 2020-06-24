@@ -4,3 +4,6 @@
 [submodule "public/inspector-widget-vue/src/modules/inspector-widget-osowiec"]
 	path = public/inspector-widget-vue/src/modules/inspector-widget-osowiec
 	url = git@github.com:Jblew/inspector-widget-osowiec.git
+[submodule "public/inspector-widget-vue/src/modules/healthchecks.io"]
+	path = public/inspector-widget-vue/src/modules/healthchecks.io
+	url = git@github.com:Jblew/inspector-widget-healthchecks.io.git

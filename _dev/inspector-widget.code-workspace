@@ -14,6 +14,9 @@
     },
     {
       "path": "../public/inspector-widget-vue/src/modules/inspector-widget-osowiec"
+    },
+    {
+      "path": "../public/inspector-widget-vue/src/modules/inspector-widget-healthchecks.io"
     }
   ],
   "settings": {

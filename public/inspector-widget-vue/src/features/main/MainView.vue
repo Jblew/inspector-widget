@@ -6,10 +6,7 @@
       </v-app-bar>
 
       <v-content>
-        <v-container fluid>
-          <a-w-s-cost-row />
-          <osowiec-row />
-        </v-container>
+        <main-view-panel />
       </v-content>
     </v-app>
   </div>
@@ -17,13 +14,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import AWSCostRow from './AWSCostRow.vue';
-import OsowiecRow from './OsowiecRow.vue';
+import MainViewPanel from './MainViewPanel.vue';
 
 export default Vue.extend({
   components: {
-    AWSCostRow,
-    OsowiecRow,
+    MainViewPanel,
   },
 });
 </script>

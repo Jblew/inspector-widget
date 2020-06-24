@@ -4,7 +4,7 @@
       "path": ".."
     },
     {
-      "path": "../public/inspector-widget-vue/"
+      "path": "../public/inspector-widget-vue/src"
     },
     {
       "path": "../public/inspector-widget-vue/src/modules"
@@ -16,7 +16,7 @@
       "path": "../public/inspector-widget-vue/src/modules/inspector-widget-osowiec"
     },
     {
-      "path": "../public/inspector-widget-vue/src/modules/inspector-widget-healthchecks.io"
+      "path": "../public/inspector-widget-vue/src/modules/healthchecks.io"
     }
   ],
   "settings": {

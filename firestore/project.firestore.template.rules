@@ -11,3 +11,8 @@ match /osowieclog/{document=**} {
   allow read: if userIsViewer();
   allow write: if false;
 }
+
+match /keys/{document=**} {
+  allow read: if userIsViewer();
+  allow write: if false;
+}
